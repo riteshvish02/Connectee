@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1>Register as Mentee</h1>
+    <form action="/api/v1/mentee/register" method="post">
+        <!-- Username -->
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        
+        <!-- Password -->
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+            <label for="contact">Contact Number:</label>
+            <input type="number" id="contact" name="contact" required>
+        </div>
+
+        <!-- Email -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Skills Interested In -->
+        <div>
+            <label for="skillsInterestedIn">Skills Interested In:</label>
+            <select id="skillsInterestedIn" name="skillsInterestedIn" multiple required>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+    
+</body>
+</html>
